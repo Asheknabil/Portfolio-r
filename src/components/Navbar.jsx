@@ -14,12 +14,12 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="absolute left-0 top-0 w-full border-b bg-[#011627] z-50">
-      <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="absolute left-0 top-0 w-full h-[80px] border-b bg-[#011627] z-50 flex items-center">
+      <div className="container mx-auto px-6 flex items-center justify-between">
 
         <div className="flex-shrink-0">
           <a href="/">
-            <img src={logo} alt="logo" className="h-12" />
+            <img src={logo} alt="logo" className="h-64 w-auto" />
           </a>
         </div>
 
