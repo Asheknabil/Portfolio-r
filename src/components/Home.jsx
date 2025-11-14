@@ -11,20 +11,21 @@ const Home = () => {
       <div className="absolute inset-0 bg-black/60"></div>
       <div className="relative z-10 container mx-auto px-6 md:px-10">
         <div className="max-w-xl text-white">
-          <span className="block text-[15px] tracking-[2px] uppercase mb-4">
-            For website and video editing
+          <span className="block text-[15px] tracking-[2px] uppercase mb-1">
+            React And NEXT.js DEVELOPER
           </span>
           <h2 className="text-4xl md:text-6xl font-bold leading-tight uppercase mb-6">
-            Videographer’s Portfolio
+            Front-End Developer
           </h2>
-          <a
+          {/* <a
             href="#"
             className="relative inline-block px-8 py-3 text-white font-bold text-[15px] uppercase tracking-wider overflow-hidden group"
           >
             See more about us
             <span className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-[#3b6064] transition-all duration-700 group-hover:w-full group-hover:h-full"></span>
             <span className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-[#3b6064] transition-all duration-700 group-hover:w-full group-hover:h-full"></span>
-          </a>
+          </a> */}
+          <p className="relative inline-block text-white text-[12px] uppercase tracking-wider overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis sequi corrupti quaerat ullam quasi eligendi accusantium quidem culpa hic?</p>
         </div>
       </div>
     </section>
