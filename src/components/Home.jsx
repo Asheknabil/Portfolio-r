@@ -25,7 +25,7 @@ const Home = () => {
             <span className="absolute top-0 left-0 w-6 h-6 border-t-2 border-l-2 border-[#3b6064] transition-all duration-700 group-hover:w-full group-hover:h-full"></span>
             <span className="absolute bottom-0 right-0 w-6 h-6 border-b-2 border-r-2 border-[#3b6064] transition-all duration-700 group-hover:w-full group-hover:h-full"></span>
           </a> */}
-          <p className="relative inline-block text-white text-[12px] uppercase tracking-wider overflow-hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quis sequi corrupti quaerat ullam quasi eligendi accusantium quidem culpa hic?</p>
+          <p className="relative inline-block text-white text-[12px] uppercase tracking-wider overflow-hidden">I love creating clean and dynamic websites using React and Next.js. I focus on responsive design, performance, and user-friendly interfaces.</p>
         </div>
       </div>
     </section>

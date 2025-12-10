@@ -1,16 +1,14 @@
-
-
 import React, { useEffect, useState } from "react";
-import ci1 from "../assets/icons/ci-1.png";
-import ci2 from "../assets/icons/ci-2.png";
-import ci3 from "../assets/icons/ci-3.png";
-import ci4 from "../assets/icons/ci-4.png";
+import { DiJqueryLogo } from "react-icons/di";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const counters = [
-  { id: 1, img: ci1, number: 13, text: "React Project", type: "" },
-  { id: 2, img: ci2, number: 19, text: "JavaScript Project", type: "second" },
-  { id: 3, img: ci3, number: 23, text: "Tailwind/Bootstrap Project", type: "third" },
-  { id: 4, img: ci4, number: 62, text: "Completed Projects", type: "four" },
+  { id: 1, icon: <FaReact className="w-12 h-12 text-[#011627]" />, number: 13, text: "React Project", type: "" },
+  { id: 2, icon: <IoLogoJavascript className="w-12 h-12 text-[#011627]" />, number: 19, text: "JavaScript Project", type: "second" },
+  { id: 3, icon: <DiJqueryLogo className="w-12 h-12 text-[#011627]" />, number: 23, text: "jQuery Project", type: "third" },
+  { id: 4, icon: <TbBrandNextjs className="w-12 h-12 text-[#011627]" />, number: 6, text: "Next js Projects", type: "four" },
 ];
 
 const CounterCard = ({ item }) => {
@@ -42,26 +40,8 @@ const CounterCard = ({ item }) => {
         ${item.type === "second" || item.type === "four" ? "lg:mt-[-185px]" : ""}
       `}
     >
-      {/* borders only lg */}
-      <div
-        className={`
-          hidden lg:block absolute z-[-1] border-[#333]
-          ${
-            item.type === "second"
-              ? "border-r border-b -left-[319px] -bottom-[62px]"
-              : item.type === "third"
-              ? "border-l border-t -left-[62px] -bottom-[320px]"
-              : item.type === "four"
-              ? "border-r border-b  -bottom-[370px] -right-[0px]"
-              : "border-l border-t -left-[0px] -bottom-[9px]"
-          }
-          w-[636px] h-[636px]
-        `}
-      ></div>
-
-      {/* inner content */}
       <div className="flex flex-col items-center justify-center transform lg:-rotate-45">
-        <img src={item.img} alt="" className="w-[50px] h-[50px]" />
+        {item.icon}
         <h2 className="text-[48px] lg:text-[60px] text-white font-bold mt-[18px] mb-[6px]">
           {count}
         </h2>
@@ -71,7 +51,7 @@ const CounterCard = ({ item }) => {
   );
 };
 
-const Counter = () => {
+export default function Counter() {
   return (
     <section className="bg-[#011627] lg:h-[840px] lg:pt-[380px] pt-24 overflow-hidden">
       <div className="px-6 lg:m-[160px] lg:mt-0 sm:px-12">
@@ -90,6 +70,4 @@ const Counter = () => {
       </div>
     </section>
   );
-};
-
-export default Counter;
+}
